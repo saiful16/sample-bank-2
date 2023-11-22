@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center mt-8">
+        <h1 class="text-3xl font-bold"> Welcome to the <span class="text-amber-600">sample Bank Limited</span> !!!!</h1>
+    </header>
+    <!-- total deposit, withdraw, amount -->
+    <section>
+        <div class="w-2/3 grid-cols-3 grid mx-auto gap-5 mt-8  text-white">
+            <div class=" bg-green-600 p-8 rounded-lg">
+                <h3 class="text-3xl ">Deposit</h3>
+                <h3 class="text-5xl font-medium">$<span id="total-deposit">00</span></h3>
+            </div>
+            <div class=" bg-yellow-600 p-8 rounded-lg">
+                <h3 class="text-3xl ">withdraw</h3>
+                <h3 class="text-5xl font-medium">$<span id="total-withdraw">00</span></h3>
+            </div>
+            <div class=" bg-red-500 p-8 rounded-lg">
+                <h3 class="text-3xl ">Total Balance</h3>
+                <h3 class="text-5xl font-medium">$<span id="total-balance">1240</span></h3>
+            </div>
+           
+        </div>
+    </section>
+    <!-- deposit and withdraw from -->
+    <section class="mt-8 w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4 ">
+            <div class="bg-violet-400 p-8 rounded-lg">
+                <h3 class="text-4xl text-white mb-4 ">Your Deposit</h3>
+                <input id="deposit-field" type="text" class="block w-2/3 rounded-lg p-2" placeholder="Enter Your deposit">
+                <button id="btn-deposit" class="text-white bg-violet-300 mt-3 rounded-lg hover:bg-pink-800 p-2">Submit</button>
+            </div>
+            <div class="bg-pink-400 p-8 rounded-lg">
+                <h3 class="text-4xl text-white mb-4 ">Your withdraw</h3>
+                <input id="withdraw-field" type="text" class="block w-2/3 rounded-lg p-2" placeholder="Enter Your withdraw">
+                <button id="btn-withdraw" class="text-white bg-violet-300 mt-3 rounded-lg hover:bg-violet-800 p-2">Submit</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script/deposit.js"></script>
+    <script src="script/withdraw.js"></script>
+</body>
+</html>
